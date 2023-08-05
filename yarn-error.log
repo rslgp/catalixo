@@ -1,0 +1,87 @@
+Arguments: 
+  /usr/local/share/nvm/versions/node/v20.4.0/bin/node /usr/share/yarn/bin/yarn.js deploy
+
+PATH: 
+  /usr/local/rvm/gems/ruby-3.2.2/bin:/usr/local/rvm/gems/ruby-3.2.2@global/bin:/usr/local/rvm/rubies/ruby-3.2.2/bin:/vscode/bin/linux-x64/2ccd690cbff1569e4a83d7c43d45101f817401dc/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/opt/conda/bin:/usr/local/php/current/bin:/usr/local/nvs:/usr/local/share/nvm/versions/node/v20.4.0/bin:/usr/local/hugo/bin:/usr/local/dotnet/current:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /workspaces/catalixo/package.json: Expected ',' or '}' after property value in JSON at position 1089
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "mapafome",
+    "homepage": "https://mapafome.com.br",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@emotion/react": "^11.7.1",
+      "@emotion/styled": "^11.6.0",
+      "@material-ui/core": "^4.9.8",
+      "@material-ui/icons": "^4.9.1",
+      "@mui/material": "^5.4.2",
+      "@testing-library/jest-dom": "^5.11.10",
+      "@testing-library/react": "^11.2.6",
+      "@testing-library/user-event": "^13.1.1",
+      "aes-encryption": "^1.0.4",
+      "google-spreadsheet": "^3.0.10",
+      "javascript-time-ago": "^2.3.10",
+      "leaflet": "^1.6.0",
+      "leaflet-geosearch": "^3.2.2",
+      "leaflet.markercluster": "^1.5.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-ga": "^3.3.0",
+      "react-leaflet": "^3.1.0",
+      "react-leaflet-markercluster": "^3.0.0-rc1",
+      "react-scripts": "4.0.3",
+      "twemoji": "^13.0.2",
+      "universal-cookie": "^4.0.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "WARN export NODE_OPTIONS=--openssl-legacy-provider &&": "FIX run npm update and than npm audit fix --force"
+      "deploy": "npm run build && echo mapafome.com.br > ./build/CNAME && gh-pages -d build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "dot-env": "^0.0.1",
+      "gh-pages": "^3.2.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
